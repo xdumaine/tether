@@ -546,9 +546,9 @@
               left: next.page.left - offsetPosition.left + scrollLeft - offsetBorder.left
             };
           }
+          this.move(next);
         }
       }
-      this.move(next);
       this.history.unshift(next);
       if (this.history.length > 3) {
         this.history.pop();
